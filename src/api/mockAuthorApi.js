@@ -21,7 +21,7 @@ const authors = [
   }
 ];
 
-//This would be performed on the server in a real app. Just stubbing in.
+// This would be performed on the server in a real app. Just stubbing in.
 const generateId = (author) => {
   return author.firstName.toLowerCase() + '-' + author.lastName.toLowerCase();
 };
