@@ -12,10 +12,12 @@ import { Provider }       from 'react-redux';
 import routes             from './routes';
 import configureStore     from './store/configureStore.js';
 import { loadCourses }    from './actions/courseActions';
+import { loadAuthors }    from './actions/authorActions';
 
 const store = configureStore();
 
 store.dispatch(loadCourses());
+store.dispatch(loadAuthors());
 
 render(
     <Provider store={store}>
