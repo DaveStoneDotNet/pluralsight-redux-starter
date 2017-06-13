@@ -1,8 +1,12 @@
 
-import * as types from './actionTypes';
-import authorApi  from '../api/mockAuthorApi';
+import * as types        from './actionTypes';
+import { beginAjaxCall } from './ajaxStatusActions';
 
+import authorApi         from '../api/mockAuthorApi';
+
+// ----------------------------------------------------------------------------------------------
 // Action Creators...
+// ----------------------------------------------------------------------------------------------
 
 export function loadAuthorsSuccess(authors) {
     return {
@@ -11,10 +15,13 @@ export function loadAuthorsSuccess(authors) {
            };
 }
 
+// ----------------------------------------------------------------------------------------------
 // Thunks...
+// ----------------------------------------------------------------------------------------------
 
 export function loadAuthors() {
     return function (dispatch) {
+        dispatch(beginAjaxCall());
         return authorApi.getAllAuthors()
                         .then((authors) => { dispatch(loadAuthorsSuccess(authors)); })
                         .catch((error)  => { throw (error); });
