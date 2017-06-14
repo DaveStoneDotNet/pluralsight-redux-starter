@@ -1,5 +1,17 @@
 # Starter Kit for [Building Applications in React and Redux in ES6](http://www.pluralsight.com/author/cory-house) on Pluralsight
 
+## Challenges (See React to Flux course)
+
+1. Author Administration - Add logic where you can't delete an author who is assigned to a course.
+2. Delete Course
+3. Hide an Empty Course List
+4. Show Unsaved Changes Message if user attempts to leave the view with changes
+5. Client-Side Validation
+6. Handle 404's - Map State to Props
+7. Show Number of Courses in the Header
+8. Sorting and Pagination - Map State to Props
+9. Revert Abandoned Changes
+
 ## Get Started
 1. **Install [Node 6](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
 2. **Clone this repository.** - `git clone https://github.com/coryhouse/pluralsight-redux-starter.git` or [download the zip](https://github.com/coryhouse/pluralsight-redux-starter/archive/master.zip)
